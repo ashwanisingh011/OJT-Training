@@ -1,0 +1,83 @@
+.div{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+}
+
+.Right{
+    height: 35px;
+    width: 45px;
+    border: 1px solid black;
+    margin-left: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
+ 
+.T-Left{
+    height: 35px;
+    width: 45px;
+    border: 1px solid black;
+    display: flex;
+       justify-content: center;
+    align-items: center;
+    margin-bottom: 85%;
+    margin-right: 70%;
+    color: blue;
+}
+
+.center{
+    height: 35px;
+    width: 45px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+.B-Left{
+    height: 35px;
+    width: 45px;
+    border: 1px solid black;
+    margin-right: 70%;
+    margin-top: 85%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hotpink;
+}
+
+.B-Right{
+    height: 35px;
+    width: 45px;
+    border: 1px solid black;
+    margin-top: 85%;
+    margin-left: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+}
+
+.Top{
+    height: 35px;
+    width: 45px;
+    border: 1px solid black;
+    margin-bottom: 85%;
+    color: rgba(112, 29, 13, 0.957);
+}
+
+p{
+    background-color: white;
+}
