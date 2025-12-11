@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Bites | Authentic Dining</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Viola Bites</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#reservation" class="btn-primary">Book a Table</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <div class="container hero-content">
+                <h1>Taste the Difference</h1>
+                <p>Experience authentic flavors prepared with the freshest ingredients in the heart of the city.</p>
+                <a href="#menu" class="btn-primary">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Specialties</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pizza">
+                    <div class="menu-details">
+                        <h3>Margherita Pizza</h3>
+                        <p>Fresh basil, mozzarella, and tomato sauce.</p>
+                        <span class="price">$12.99</span>
+                        <button onclick="booknow()">Order</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="BBQ">
+                    <div class="menu-details">
+                        <h3>Smoked BBQ Ribs</h3>
+                        <p>Slow-cooked ribs with our signature house sauce.</p>
+                        <span class="price">$18.50</span>
+                        <button onclick="booknow()">Order</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Salad">
+                    <div class="menu-details">
+                        <h3>Caesar Salad</h3>
+                        <p>Crisp romaine, parmesan, croutons, and caesar dressing.</p>
+                        <span class="price">$9.00</span>
+                        <button onclick="booknow()">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2 class="section-title">Our Story</h2>
+                <p>Founded in 2015, Savory Bites began with a simple mission: to serve delicious, high-quality food in a warm and inviting atmosphere. Our chefs source ingredients from local farmers to ensure every dish bursts with flavor.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Restaurant Interior">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Savory Bites.</h3>
+                <p>123 Culinary Avenue<br>Food City, FC 90210</p>
+            </div>
+            <div class="footer-col">
+                <h3>Hours</h3>
+                <p>Mon-Fri: 11am - 10pm<br>Sat-Sun: 10am - 11pm</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>+1 (555) 123-4567<br>hello@savorybites.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Savory Bites Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+<script>
+    const booknow = () => {
+        alert("Added to Cart...");
+    }
+</script>
+</html>
