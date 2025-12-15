@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>User Registration</h2>
+
+    <!-- Change method="get" OR method="post" -->
+    <form action="result.html" method="post">
+        
+        <label>Name:</label>
+        <input type="text" name="username" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Password:</label>
+        <input type="password" name="password" required minlength="6">
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
