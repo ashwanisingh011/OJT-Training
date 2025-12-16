@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+ <div class="flex min-h-screen w-full items-center justify-center p-4">
+
+  <details class="group w-full max-w-md overflow-hidden rounded-xl bg-white shadow-lg outline outline-black/5 transition-all duration-300 open:ring-4 open:ring-purple-200">
+    
+    <summary class="flex cursor-pointer list-none flex-col items-center gap-2 p-8 sm:flex-row sm:gap-6">
+      
+      <img class="block h-24 w-24 rounded-full sm:shrink-0" src="IMG_0574.heic" alt="Ashwani Singh" />
+      
+      <div class="space-y-2 text-center sm:text-left">
+        <div class="space-y-0.5">
+          <p class="text-lg font-semibold text-black">Ashwani Singh</p>
+          <p class="font-medium text-gray-500">@SWE III</p>
+        </div>
+        
+        <span class="text-xs text-purple-600 group-open:hidden">Tap to view contact ↓</span>
+      </div>
+    </summary>
+
+    <div class="bg-gray-50 border-t border-gray-100 p-6 text-center animate-in fade-in slide-in-from-top-2">
+        <h3 class="font-semibold text-gray-900">Contact Information</h3>
+        <div class="mt-4 flex flex-col gap-2">
+            <a href="mailto:email@example.com" class="text-gray-600 hover:text-purple-600 transition-colors">ashwanisingh9737@gmail.com</a>
+            <a href="tel:+1234567890" class="text-gray-600 hover:text-purple-600 transition-colors">+91 93285 53579</a>
+            
+            <button class="mt-4 w-full rounded-full border border-purple-200 px-4 py-2 text-sm font-semibold text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+              Message Me
+            </button>
+        </div>
+    </div>
+
+  </details>
+</div>
+  </body>
+</html>
