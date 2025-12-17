@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS project</title>
+</head>
+<body>
+    <input class="first" type="number">
+    <input class="second" type="number">
+    <button class="addition">+</button>
+    <button class="subtraction">-</button>
+    <button class="multiplication">*</button>
+    <button class="divison">/</button>
+</body>
+<script>
+
+    const addBtn = document.getElementsByClassName("addition")[0];
+
+    addBtn.addEventListener("click", function () {
+        const first = parseFloat(document.getElementsByClassName("first")[0].value);
+        const second = parseFloat(document.getElementsByClassName("second")[0].value);
+        const answer = first + second;
+        const h1 = document.createElement("h1"); 
+        h1.innerHTML = answer;                   
+        document.body.appendChild(h1); 
+    });
+    const subBtn = document.getElementsByClassName("subtraction")[0];
+
+        subBtn.addEventListener("click", function () {
+        const first = parseFloat(document.getElementsByClassName("first")[0].value);
+        const second = parseFloat(document.getElementsByClassName("second")[0].value);
+        
+        const answer = first - second;
+        const h1 = document.createElement("h1");
+        h1.innerHTML = answer;
+        document.body.appendChild(h1);
+        
+    });
+    const mulBtn = document.getElementsByClassName("multiplication")[0];
+
+    mulBtn.addEventListener("click", function () {
+        const first = parseFloat(document.getElementsByClassName("first")[0].value);
+        const second = parseFloat(document.getElementsByClassName("second")[0].value);
+
+        const answer = first * second;
+        const h1 = document.createElement("h1");
+        h1.innerHTML = answer;
+        document.body.appendChild(h1);
+        
+    });
+    const divBtn = document.getElementsByClassName("divison")[0];
+
+    divBtn.addEventListener("click", function () {
+        const first = parseFloat(document.getElementsByClassName("first")[0].value);
+        if(first === 0){
+            alert("number can't be zero");
+        }
+        const second = parseFloat(document.getElementsByClassName("second")[0].value)
+        
+        const answer = first / second;
+        const h1 = document.createElement("h1");
+        h1.innerHTML = answer;
+        document.body.appendChild(h1);
+    })
+</script>
+
+    
+
+</html>
