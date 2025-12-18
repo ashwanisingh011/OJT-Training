@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning Arrays</h1>
+    <button onclick=showSeat(0)>Ashish</button>
+    <button onclick=showSeat(1)>Rahul</button>
+    <button onclick=showSeat(2)>Amit</button>
+    <button onclick=showSeat(3)>Chaman</button>
+    <button onclick=showSeat(4)>Neeraj</button>
+
+    <p id="output"></p>
+</body>
+<script>
+    let seatNumber = [10, 11, 12, 13, 14]
+    const showSeat = (index) => {
+        document.getElementById("output").innerHTML = "Seat Number: " + seatNumber[index];
+    }
+</script>
+</html>

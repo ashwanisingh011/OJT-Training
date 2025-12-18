@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Students Marks</h1>
+    <button onclick=showPlan(0)>Amit</button>
+    <button onclick=showPlan(1)>Rahul</button>
+    <button onclick=showPlan(2)>Chaman</button>
+
+    <p id="output"></p>
+    <p id="Result"></p>
+    <p id="Percentage"></p>
+</body>
+<script>
+    let Marks = [
+        {English: "30", Math: "20", Physics: "45"},
+        {English: "45", Math: "90", Physics: "65"},
+        {English: "39", Math: "70", Physics: "75"},
+       
+    ]
+    const showPlan = (index) => {
+        document.getElementById("output").innerHTML = "English: " + Marks[index].English + ", Math: " + Marks[index].Math + ", Physics: " +Marks[index].Physics;
+
+        if(Marks[index].English > 33 && Marks[index].Math > 33 && Marks[index].Physics > 33){
+            document.getElementById("Result").innerHTML = "Pass"
+            document.getElementById("Result").innerHTML = "Percentage: " (Marks[index].English+Marks[index].Math + Marks[index].Physics)/300 * 100; 
+        }else{
+            document.getElementById("Percentage").innerHTML = "Kyun nhi horahi hai padhai?"
+            document.createElement("img")
+
+        }
+    }
+    
+</script>
+</html>
